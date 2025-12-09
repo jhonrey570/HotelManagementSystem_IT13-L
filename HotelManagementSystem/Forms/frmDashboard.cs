@@ -16,5 +16,26 @@ namespace HotelManagementSystem.Forms
         {
             InitializeComponent();
         }
+
+        private void lblHotelName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Custom Add
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblDateTime.Text = DateTime.Now.ToString("MMM dd, yyyy hh:mm tt");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvTodaySummary_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
