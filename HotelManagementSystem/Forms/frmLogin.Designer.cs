@@ -48,61 +48,65 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(58, 42);
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(50, 78);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(205, 22);
+            this.lblTitle.Size = new System.Drawing.Size(222, 28);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "JMS Hotel Management";
             // 
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(73, 118);
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(16, 129);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(47, 16);
+            this.lblUsername.Size = new System.Drawing.Size(60, 23);
             this.lblUsername.TabIndex = 1;
             this.lblUsername.Text = "Name:";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(106, 312);
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(16, 217);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(70, 16);
+            this.lblPassword.Size = new System.Drawing.Size(84, 23);
             this.lblPassword.TabIndex = 2;
             this.lblPassword.Text = "Password:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(76, 190);
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.Location = new System.Drawing.Point(20, 155);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(100, 30);
+            this.txtUsername.Size = new System.Drawing.Size(285, 30);
             this.txtUsername.TabIndex = 3;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(52, 255);
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(20, 243);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 30);
+            this.txtPassword.Size = new System.Drawing.Size(285, 30);
             this.txtPassword.TabIndex = 4;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(42, 374);
+            this.btnLogin.Location = new System.Drawing.Point(55, 306);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(75, 30);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Log-In";
             this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(38, 331);
+            this.btnExit.Location = new System.Drawing.Point(197, 306);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(75, 30);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -110,7 +114,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HotelManagementSystem.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 140);
+            this.pictureBox1.Location = new System.Drawing.Point(140, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,17 +124,26 @@
             // chkRemember
             // 
             this.chkRemember.AutoSize = true;
-            this.chkRemember.Location = new System.Drawing.Point(17, 403);
+            this.chkRemember.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRemember.Location = new System.Drawing.Point(20, 279);
             this.chkRemember.Name = "chkRemember";
-            this.chkRemember.Size = new System.Drawing.Size(119, 20);
+            this.chkRemember.Size = new System.Drawing.Size(116, 21);
             this.chkRemember.TabIndex = 8;
             this.chkRemember.Text = "Remember me";
             this.chkRemember.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.lblPassword);
+            this.panel1.Controls.Add(this.chkRemember);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnLogin);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.lblUsername);
             this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Location = new System.Drawing.Point(237, 40);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(326, 370);
@@ -145,16 +158,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::HotelManagementSystem.Properties.Resources.Color;
+            this.BackgroundImage = global::HotelManagementSystem.Properties.Resources.c21e9df7_ffad_42fa_ab2f_83bc8f45b0b1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.chkRemember);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.btnLogin);
             this.Name = "frmLogin";
             this.Text = "frmLogin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -162,7 +169,6 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
