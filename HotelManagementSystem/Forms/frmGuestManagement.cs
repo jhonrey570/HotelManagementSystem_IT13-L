@@ -16,5 +16,15 @@ namespace HotelManagementSystem.Forms
         {
             InitializeComponent();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gbGuestDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
