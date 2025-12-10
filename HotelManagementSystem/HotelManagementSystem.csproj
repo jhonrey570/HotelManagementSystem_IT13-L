@@ -126,6 +126,9 @@
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="Services\ReportService.cs" />
     <Compile Include="Services\ValidationService.cs" />
+    <EmbeddedResource Include="Forms\frmCheckInOut.resx">
+      <DependentUpon>frmCheckInOut.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
