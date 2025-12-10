@@ -16,5 +16,10 @@ namespace HotelManagementSystem.Forms
         {
             InitializeComponent();
         }
+
+        private void txtSearchRoom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
