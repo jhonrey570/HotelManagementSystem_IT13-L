@@ -21,6 +21,7 @@ namespace HotelManagementSystem
             Application.Run(new frmDashboard());
             Application.Run(new frmReservation());
             Application.Run(new frmRoomManagement());
+            Application.Run(new frmGuestManagement());
 
         }
     }
