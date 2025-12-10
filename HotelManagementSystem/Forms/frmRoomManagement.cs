@@ -21,5 +21,10 @@ namespace HotelManagementSystem.Forms
         {
 
         }
+
+        private void gbRoomDetails_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

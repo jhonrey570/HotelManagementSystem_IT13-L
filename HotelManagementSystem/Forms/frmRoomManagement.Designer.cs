@@ -59,6 +59,7 @@
             this.btnDeleteRoom = new System.Windows.Forms.Button();
             this.btnBlockRoom = new System.Windows.Forms.Button();
             this.panelFilter.SuspendLayout();
+            this.panelRoomDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).BeginInit();
             this.gbRoomDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudRate)).BeginInit();
@@ -82,26 +83,32 @@
             this.panelFilter.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelFilter.Location = new System.Drawing.Point(0, 0);
             this.panelFilter.Name = "panelFilter";
-            this.panelFilter.Size = new System.Drawing.Size(897, 162);
+            this.panelFilter.Size = new System.Drawing.Size(797, 152);
             this.panelFilter.TabIndex = 0;
             // 
             // panelRoomDetails
             // 
+            this.panelRoomDetails.Controls.Add(this.btnBlockRoom);
+            this.panelRoomDetails.Controls.Add(this.picRoomImage);
+            this.panelRoomDetails.Controls.Add(this.lblRoomImage);
+            this.panelRoomDetails.Controls.Add(this.btnDeleteRoom);
+            this.panelRoomDetails.Controls.Add(this.btnAddRoom);
+            this.panelRoomDetails.Controls.Add(this.btnEditRoom);
             this.panelRoomDetails.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelRoomDetails.Location = new System.Drawing.Point(0, 446);
+            this.panelRoomDetails.Location = new System.Drawing.Point(0, 425);
             this.panelRoomDetails.Name = "panelRoomDetails";
-            this.panelRoomDetails.Size = new System.Drawing.Size(897, 217);
+            this.panelRoomDetails.Size = new System.Drawing.Size(797, 255);
             this.panelRoomDetails.TabIndex = 1;
             // 
             // dgvRooms
             // 
             this.dgvRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRooms.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvRooms.Location = new System.Drawing.Point(0, 162);
+            this.dgvRooms.Location = new System.Drawing.Point(0, 152);
             this.dgvRooms.Name = "dgvRooms";
             this.dgvRooms.RowHeadersWidth = 62;
             this.dgvRooms.RowTemplate.Height = 28;
-            this.dgvRooms.Size = new System.Drawing.Size(897, 284);
+            this.dgvRooms.Size = new System.Drawing.Size(797, 273);
             this.dgvRooms.TabIndex = 2;
             // 
             // lblSearch
@@ -209,33 +216,28 @@
             // 
             // gbRoomDetails
             // 
-            this.gbRoomDetails.Controls.Add(this.btnBlockRoom);
-            this.gbRoomDetails.Controls.Add(this.btnDeleteRoom);
-            this.gbRoomDetails.Controls.Add(this.btnEditRoom);
-            this.gbRoomDetails.Controls.Add(this.btnAddRoom);
-            this.gbRoomDetails.Controls.Add(this.picRoomImage);
-            this.gbRoomDetails.Controls.Add(this.lblRoomImage);
-            this.gbRoomDetails.Controls.Add(this.lblRoomInfo);
             this.gbRoomDetails.Controls.Add(this.cmbStatus);
             this.gbRoomDetails.Controls.Add(this.nudFloor);
             this.gbRoomDetails.Controls.Add(this.nudRate);
             this.gbRoomDetails.Controls.Add(this.txtRoomNumber);
             this.gbRoomDetails.Controls.Add(this.lblStatus);
+            this.gbRoomDetails.Controls.Add(this.lblRoomInfo);
             this.gbRoomDetails.Controls.Add(this.lblFloor);
             this.gbRoomDetails.Controls.Add(this.lblRate);
             this.gbRoomDetails.Controls.Add(this.lblRoomNo);
-            this.gbRoomDetails.Location = new System.Drawing.Point(0, 446);
+            this.gbRoomDetails.Location = new System.Drawing.Point(0, 425);
             this.gbRoomDetails.Name = "gbRoomDetails";
-            this.gbRoomDetails.Size = new System.Drawing.Size(897, 217);
+            this.gbRoomDetails.Size = new System.Drawing.Size(392, 250);
             this.gbRoomDetails.TabIndex = 0;
             this.gbRoomDetails.TabStop = false;
             this.gbRoomDetails.Text = "Room Details";
+            this.gbRoomDetails.Enter += new System.EventHandler(this.gbRoomDetails_Enter);
             // 
             // lblRoomNo
             // 
             this.lblRoomNo.AutoSize = true;
             this.lblRoomNo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoomNo.Location = new System.Drawing.Point(35, 37);
+            this.lblRoomNo.Location = new System.Drawing.Point(35, 25);
             this.lblRoomNo.Name = "lblRoomNo";
             this.lblRoomNo.Size = new System.Drawing.Size(100, 28);
             this.lblRoomNo.TabIndex = 12;
@@ -245,7 +247,7 @@
             // 
             this.lblRate.AutoSize = true;
             this.lblRate.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRate.Location = new System.Drawing.Point(35, 79);
+            this.lblRate.Location = new System.Drawing.Point(35, 67);
             this.lblRate.Name = "lblRate";
             this.lblRate.Size = new System.Drawing.Size(55, 28);
             this.lblRate.TabIndex = 13;
@@ -255,7 +257,7 @@
             // 
             this.lblFloor.AutoSize = true;
             this.lblFloor.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFloor.Location = new System.Drawing.Point(35, 120);
+            this.lblFloor.Location = new System.Drawing.Point(35, 108);
             this.lblFloor.Name = "lblFloor";
             this.lblFloor.Size = new System.Drawing.Size(62, 28);
             this.lblFloor.TabIndex = 14;
@@ -265,7 +267,7 @@
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(35, 158);
+            this.lblStatus.Location = new System.Drawing.Point(35, 146);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(69, 28);
             this.lblStatus.TabIndex = 15;
@@ -273,7 +275,7 @@
             // 
             // txtRoomNumber
             // 
-            this.txtRoomNumber.Location = new System.Drawing.Point(169, 37);
+            this.txtRoomNumber.Location = new System.Drawing.Point(169, 25);
             this.txtRoomNumber.Multiline = true;
             this.txtRoomNumber.Name = "txtRoomNumber";
             this.txtRoomNumber.Size = new System.Drawing.Size(150, 32);
@@ -281,14 +283,14 @@
             // 
             // nudRate
             // 
-            this.nudRate.Location = new System.Drawing.Point(169, 84);
+            this.nudRate.Location = new System.Drawing.Point(169, 72);
             this.nudRate.Name = "nudRate";
             this.nudRate.Size = new System.Drawing.Size(150, 26);
             this.nudRate.TabIndex = 16;
             // 
             // nudFloor
             // 
-            this.nudFloor.Location = new System.Drawing.Point(169, 125);
+            this.nudFloor.Location = new System.Drawing.Point(169, 113);
             this.nudFloor.Name = "nudFloor";
             this.nudFloor.Size = new System.Drawing.Size(150, 26);
             this.nudFloor.TabIndex = 17;
@@ -296,7 +298,7 @@
             // cmbStatus
             // 
             this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Location = new System.Drawing.Point(169, 161);
+            this.cmbStatus.Location = new System.Drawing.Point(169, 149);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(150, 28);
             this.cmbStatus.TabIndex = 12;
@@ -304,18 +306,18 @@
             // lblRoomInfo
             // 
             this.lblRoomInfo.AutoSize = true;
-            this.lblRoomInfo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoomInfo.Location = new System.Drawing.Point(394, 0);
+            this.lblRoomInfo.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoomInfo.Location = new System.Drawing.Point(35, 190);
             this.lblRoomInfo.Name = "lblRoomInfo";
-            this.lblRoomInfo.Size = new System.Drawing.Size(197, 25);
+            this.lblRoomInfo.Size = new System.Drawing.Size(172, 28);
             this.lblRoomInfo.TabIndex = 18;
-            this.lblRoomInfo.Text = "Additional Information:";
+            this.lblRoomInfo.Text = "Room Information";
             // 
             // lblRoomImage
             // 
             this.lblRoomImage.AutoSize = true;
             this.lblRoomImage.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRoomImage.Location = new System.Drawing.Point(394, 37);
+            this.lblRoomImage.Location = new System.Drawing.Point(408, 3);
             this.lblRoomImage.Name = "lblRoomImage";
             this.lblRoomImage.Size = new System.Drawing.Size(127, 28);
             this.lblRoomImage.TabIndex = 19;
@@ -323,16 +325,16 @@
             // 
             // picRoomImage
             // 
-            this.picRoomImage.Location = new System.Drawing.Point(536, 37);
+            this.picRoomImage.Location = new System.Drawing.Point(413, 47);
             this.picRoomImage.Name = "picRoomImage";
-            this.picRoomImage.Size = new System.Drawing.Size(211, 152);
+            this.picRoomImage.Size = new System.Drawing.Size(238, 171);
             this.picRoomImage.TabIndex = 20;
             this.picRoomImage.TabStop = false;
             // 
             // btnAddRoom
             // 
             this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRoom.Location = new System.Drawing.Point(777, 37);
+            this.btnAddRoom.Location = new System.Drawing.Point(692, 57);
             this.btnAddRoom.Name = "btnAddRoom";
             this.btnAddRoom.Size = new System.Drawing.Size(87, 32);
             this.btnAddRoom.TabIndex = 12;
@@ -342,7 +344,7 @@
             // btnEditRoom
             // 
             this.btnEditRoom.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditRoom.Location = new System.Drawing.Point(777, 75);
+            this.btnEditRoom.Location = new System.Drawing.Point(692, 95);
             this.btnEditRoom.Name = "btnEditRoom";
             this.btnEditRoom.Size = new System.Drawing.Size(87, 32);
             this.btnEditRoom.TabIndex = 21;
@@ -352,7 +354,7 @@
             // btnDeleteRoom
             // 
             this.btnDeleteRoom.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteRoom.Location = new System.Drawing.Point(777, 113);
+            this.btnDeleteRoom.Location = new System.Drawing.Point(692, 133);
             this.btnDeleteRoom.Name = "btnDeleteRoom";
             this.btnDeleteRoom.Size = new System.Drawing.Size(87, 32);
             this.btnDeleteRoom.TabIndex = 22;
@@ -362,7 +364,7 @@
             // btnBlockRoom
             // 
             this.btnBlockRoom.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBlockRoom.Location = new System.Drawing.Point(777, 151);
+            this.btnBlockRoom.Location = new System.Drawing.Point(692, 171);
             this.btnBlockRoom.Name = "btnBlockRoom";
             this.btnBlockRoom.Size = new System.Drawing.Size(87, 32);
             this.btnBlockRoom.TabIndex = 23;
@@ -373,7 +375,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 663);
+            this.ClientSize = new System.Drawing.Size(797, 680);
             this.Controls.Add(this.gbRoomDetails);
             this.Controls.Add(this.dgvRooms);
             this.Controls.Add(this.panelRoomDetails);
@@ -382,6 +384,8 @@
             this.Text = "frmRoomManagement";
             this.panelFilter.ResumeLayout(false);
             this.panelFilter.PerformLayout();
+            this.panelRoomDetails.ResumeLayout(false);
+            this.panelRoomDetails.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).EndInit();
             this.gbRoomDetails.ResumeLayout(false);
             this.gbRoomDetails.PerformLayout();
