@@ -17,7 +17,7 @@ namespace HotelManagementSystem.Forms
             InitializeComponent();
         }
 
-     
+     //
         private void dgvTodayArrivals_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
