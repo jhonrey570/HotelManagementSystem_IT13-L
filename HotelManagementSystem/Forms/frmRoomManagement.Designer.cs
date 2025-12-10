@@ -41,7 +41,6 @@
             this.cmbBuildingFilter = new System.Windows.Forms.ComboBox();
             this.cmbStatusFilter = new System.Windows.Forms.ComboBox();
             this.chkShowAll = new System.Windows.Forms.CheckBox();
-            this.btnSearch = new System.Windows.Forms.Button();
             this.gbRoomDetails = new System.Windows.Forms.GroupBox();
             this.lblRoomNo = new System.Windows.Forms.Label();
             this.lblRate = new System.Windows.Forms.Label();
@@ -53,11 +52,12 @@
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.lblRoomInfo = new System.Windows.Forms.Label();
             this.lblRoomImage = new System.Windows.Forms.Label();
-            this.picRoomImage = new System.Windows.Forms.PictureBox();
             this.btnAddRoom = new System.Windows.Forms.Button();
             this.btnEditRoom = new System.Windows.Forms.Button();
             this.btnDeleteRoom = new System.Windows.Forms.Button();
             this.btnBlockRoom = new System.Windows.Forms.Button();
+            this.picRoomImage = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panelFilter.SuspendLayout();
             this.panelRoomDetails.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).BeginInit();
@@ -88,6 +88,7 @@
             // 
             // panelRoomDetails
             // 
+            this.panelRoomDetails.Controls.Add(this.gbRoomDetails);
             this.panelRoomDetails.Controls.Add(this.btnBlockRoom);
             this.panelRoomDetails.Controls.Add(this.picRoomImage);
             this.panelRoomDetails.Controls.Add(this.lblRoomImage);
@@ -204,16 +205,6 @@
             this.chkShowAll.Text = "Show All";
             this.chkShowAll.UseVisualStyleBackColor = true;
             // 
-            // btnSearch
-            // 
-            this.btnSearch.BackgroundImage = global::HotelManagementSystem.Properties.Resources.icons8_search_50;
-            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearch.Location = new System.Drawing.Point(325, 23);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(35, 32);
-            this.btnSearch.TabIndex = 11;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
             // gbRoomDetails
             // 
             this.gbRoomDetails.Controls.Add(this.cmbStatus);
@@ -225,7 +216,7 @@
             this.gbRoomDetails.Controls.Add(this.lblFloor);
             this.gbRoomDetails.Controls.Add(this.lblRate);
             this.gbRoomDetails.Controls.Add(this.lblRoomNo);
-            this.gbRoomDetails.Location = new System.Drawing.Point(0, 425);
+            this.gbRoomDetails.Location = new System.Drawing.Point(3, 3);
             this.gbRoomDetails.Name = "gbRoomDetails";
             this.gbRoomDetails.Size = new System.Drawing.Size(392, 250);
             this.gbRoomDetails.TabIndex = 0;
@@ -323,14 +314,6 @@
             this.lblRoomImage.TabIndex = 19;
             this.lblRoomImage.Text = "Room Image:";
             // 
-            // picRoomImage
-            // 
-            this.picRoomImage.Location = new System.Drawing.Point(413, 47);
-            this.picRoomImage.Name = "picRoomImage";
-            this.picRoomImage.Size = new System.Drawing.Size(238, 171);
-            this.picRoomImage.TabIndex = 20;
-            this.picRoomImage.TabStop = false;
-            // 
             // btnAddRoom
             // 
             this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -371,12 +354,29 @@
             this.btnBlockRoom.Text = "Block";
             this.btnBlockRoom.UseVisualStyleBackColor = true;
             // 
+            // picRoomImage
+            // 
+            this.picRoomImage.Location = new System.Drawing.Point(413, 47);
+            this.picRoomImage.Name = "picRoomImage";
+            this.picRoomImage.Size = new System.Drawing.Size(238, 171);
+            this.picRoomImage.TabIndex = 20;
+            this.picRoomImage.TabStop = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackgroundImage = global::HotelManagementSystem.Properties.Resources.icons8_search_50;
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearch.Location = new System.Drawing.Point(325, 23);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(35, 32);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
             // frmRoomManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 680);
-            this.Controls.Add(this.gbRoomDetails);
             this.Controls.Add(this.dgvRooms);
             this.Controls.Add(this.panelRoomDetails);
             this.Controls.Add(this.panelFilter);
