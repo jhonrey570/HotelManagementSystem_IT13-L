@@ -19,6 +19,9 @@ namespace HotelManagementSystem
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());
             Application.Run(new frmDashboard());
+            Application.Run(new frmReservation());
+            Application.Run(new frmRoomManagement());
+
         }
     }
 }
