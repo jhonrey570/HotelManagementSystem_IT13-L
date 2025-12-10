@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelHeader = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -178,7 +178,6 @@
             this.QuickAction.Size = new System.Drawing.Size(124, 28);
             this.QuickAction.TabIndex = 2;
             this.QuickAction.Text = "Quick Action";
-            this.QuickAction.Click += new System.EventHandler(this.QuickAction_Click);
             // 
             // btnCheckIn
             // 
@@ -235,7 +234,6 @@
             this.lblTotalRooms.Size = new System.Drawing.Size(110, 25);
             this.lblTotalRooms.TabIndex = 3;
             this.lblTotalRooms.Text = "Total Rooms";
-            this.lblTotalRooms.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblAvailableRooms
             // 
@@ -246,7 +244,6 @@
             this.lblAvailableRooms.Size = new System.Drawing.Size(144, 25);
             this.lblAvailableRooms.TabIndex = 4;
             this.lblAvailableRooms.Text = "Available Rooms";
-            this.lblAvailableRooms.Click += new System.EventHandler(this.lblAvailableRooms_Click);
             // 
             // lblOccupancyRate
             // 
@@ -257,7 +254,6 @@
             this.lblOccupancyRate.Size = new System.Drawing.Size(139, 25);
             this.lblOccupancyRate.TabIndex = 5;
             this.lblOccupancyRate.Text = "Occupancy Rate";
-            this.lblOccupancyRate.Click += new System.EventHandler(this.lblOccupancyRate_Click);
             // 
             // lblTodayRevenue
             // 
@@ -268,7 +264,6 @@
             this.lblTodayRevenue.Size = new System.Drawing.Size(130, 25);
             this.lblTodayRevenue.TabIndex = 6;
             this.lblTodayRevenue.Text = "Today Revenue";
-            this.lblTodayRevenue.Click += new System.EventHandler(this.lblTodayRevenue_Click);
             // 
             // panelLabels
             // 
@@ -303,7 +298,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(592, 190);
+            this.tabPage1.Size = new System.Drawing.Size(592, 183);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Today Arrivals";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -314,7 +309,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(592, 190);
+            this.tabPage2.Size = new System.Drawing.Size(592, 183);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Today Departures";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -337,7 +332,7 @@
             this.dgvTodayArrivals.Name = "dgvTodayArrivals";
             this.dgvTodayArrivals.RowHeadersWidth = 62;
             this.dgvTodayArrivals.RowTemplate.Height = 28;
-            this.dgvTodayArrivals.Size = new System.Drawing.Size(586, 184);
+            this.dgvTodayArrivals.Size = new System.Drawing.Size(586, 177);
             this.dgvTodayArrivals.TabIndex = 0;
             this.dgvTodayArrivals.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTodayArrivals_CellContentClick_1);
             // 
@@ -349,7 +344,7 @@
             this.dgvTodayDepartures.Name = "dgvTodayDepartures";
             this.dgvTodayDepartures.RowHeadersWidth = 62;
             this.dgvTodayDepartures.RowTemplate.Height = 28;
-            this.dgvTodayDepartures.Size = new System.Drawing.Size(586, 184);
+            this.dgvTodayDepartures.Size = new System.Drawing.Size(586, 177);
             this.dgvTodayDepartures.TabIndex = 1;
             // 
             // label1
@@ -362,37 +357,35 @@
             this.label1.Size = new System.Drawing.Size(168, 41);
             this.label1.TabIndex = 6;
             this.label1.Text = "JMS HOTEL";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // chartOccupancy
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartOccupancy.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartOccupancy.Legends.Add(legend3);
+            chartArea5.Name = "ChartArea1";
+            this.chartOccupancy.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartOccupancy.Legends.Add(legend5);
             this.chartOccupancy.Location = new System.Drawing.Point(48, 106);
             this.chartOccupancy.Name = "chartOccupancy";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartOccupancy.Series.Add(series3);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chartOccupancy.Series.Add(series5);
             this.chartOccupancy.Size = new System.Drawing.Size(211, 130);
             this.chartOccupancy.TabIndex = 10;
             this.chartOccupancy.Text = "chart2";
-            this.chartOccupancy.Click += new System.EventHandler(this.chart2_Click);
             // 
             // chartRevenue
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartRevenue.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartRevenue.Legends.Add(legend4);
+            chartArea6.Name = "ChartArea1";
+            this.chartRevenue.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartRevenue.Legends.Add(legend6);
             this.chartRevenue.Location = new System.Drawing.Point(337, 106);
             this.chartRevenue.Name = "chartRevenue";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chartRevenue.Series.Add(series4);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.chartRevenue.Series.Add(series6);
             this.chartRevenue.Size = new System.Drawing.Size(211, 130);
             this.chartRevenue.TabIndex = 11;
             this.chartRevenue.Text = "chart1";
